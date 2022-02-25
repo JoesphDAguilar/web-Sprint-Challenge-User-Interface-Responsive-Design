@@ -45,7 +45,6 @@ p, a {
 }
 
 .container {
-    text-align: center;
     margin: 0 auto;
     width: 100%;
 }
@@ -123,23 +122,37 @@ header a{
     margin-top: 1%;
 }
 
-.menu-section {
+.menu-container {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    column-count: 2;
+    width: 100;
 }
 
-.menu-item{
-    display: flex;
-    flex-direction: column;
-    margin-left: 20%;
+.menu-container h2 {
     padding: 4%;
 }
 
-.menu-item h4 {
+.menu-section {
     display: flex;
-    flex-direction: row;
-    padding-right: 40%;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-bottom: 10%;
+    margin-right: 30%;
+    width: 30%;
 }
+
+.menu-item {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
 
 /* footer section */
 footer {
