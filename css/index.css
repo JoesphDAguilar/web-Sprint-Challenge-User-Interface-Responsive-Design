@@ -263,8 +263,32 @@ footer p {
 }
 /* mobile media query */
 @media (max-width: 428px) {
+
     /* header section */
-    
+    .header-container h1 a{
+        font-size: 4rem;
+    }
+    .header-container h1 {
+        line-height: 5rem;
+        padding-top: 2%;
+        width: 70%;
+        margin-left: 14%;
+    }
+
+    .header-container nav {
+        display: flex;
+        flex-direction: column;
+        padding: 9%;
+    }
+
+    .header-container {
+        height: 48vh;
+    }
+
+    .header-container nav i {
+        font-size: 3rem;
+        margin-top: 8%;
+    }
 
     /* gallery section */
     .gallery {
