@@ -293,8 +293,18 @@ footer p {
     /* gallery section */
     .gallery {
         height: auto;
+        width: 100%;
+
     }
-    
+
+    .gallery-container img {
+        margin: 2% 0% 4%;
+        width: 100%;
+    }
+
+    .spacerFood {
+        height: 18vh;
+    }
     /* about us section */
 
     .about {
@@ -338,5 +348,46 @@ footer p {
         height: auto;
         padding-top: 2.5vh;
         font-size: 2rem;
+    }
+
+    footer label {
+        display: flex;
+        justify-content: center;
+        font-size: 2.5rem;
+        padding-bottom: 3%;
+    }
+
+    footer input {
+     margin-left: 5%;
+     width: 90%;
+    }
+
+    footer input::placeholder {
+        font-size: 2rem;
+    }
+
+    .btn {
+        width: 90%;
+        padding-left: 34%;
+        font-size: 2rem;
+        margin: .4% 0 5% 5%;
+    }
+
+    footer nav {
+       display: flex;
+       flex-direction: column;
+       width: 100%;
+       margin-left: 3%;
+    }
+
+    footer nav a {
+        margin-right: 0%;
+
+    }
+
+    footer p {
+        font-size: 1.5rem;
+        margin-left: 18%;
+        width: 68%;
     }
 }
