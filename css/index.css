@@ -4,7 +4,6 @@
     padding: 0;
     margin: 0;
     max-width: 100%;
-    border: 1px solid red;
 }
 
 html {
@@ -96,12 +95,18 @@ header a{
 /* spacers */
 .spacer {
     width: 100%;
+    height: 20vh;
+    background-color: rgb(0, 4, 17);
+}
+
+.spacerFood {
+    width: 100%;
     height: 35vh;
     background-color: rgb(0, 4, 17);
 }
 .spacer-sm {
     width: 100%;
-    height: 10vh;
+    height: 2vh;
     background-color: rgb(0, 4, 17);
 }
 
@@ -132,6 +137,7 @@ header a{
     background-size: cover;
     background-position: top;
     background-repeat: no-repeat;
+    color: rgb(225, 239, 230);
 }
 
 .about-container {
@@ -159,6 +165,7 @@ header a{
     background-position: center;
     background-repeat: no-repeat;
     background-color: rgb(0, 4, 17);
+    color: rgb(225, 239, 230);
 }
 
 .contact-container {
@@ -198,15 +205,62 @@ header a{
     width: 25%;
 }
 
-/* footer section */
-footer {
-    width: 100%;
-    height: 15vh;
-    padding-top: 2.5vh;
-    font-size: 3rem;
+#phone {
+    color: rgb(225, 239, 230);
+}
+
+#email {
+    color: rgb(225, 239, 230);
 }
 
 
+/* footer section */
+footer {
+    width: 100%;
+    height: 14vh;
+    padding-top: 2.5vh;
+    font-size: 3rem;
+    background-color: rgb(0, 4, 17);
+    color: rgb(225, 239, 230); 
+}
+
+footer label {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 5%;
+}
+
+footer input {
+    display: flex;
+    height: 4vh;
+    width: 20%;
+    margin-left: 1%;
+}
+
+.btn {
+    font-size: 3rem;
+    width: 6%;
+    height: 4.1vh;
+    display: flex;
+   margin-left: 21%;
+   margin-top: -2.3%;
+}
+
+footer nav a {
+    color: rgb(225, 239, 230);
+    padding-right: 10%;
+}
+
+footer nav {
+    margin-top: -5%;
+    margin-left: 30%;
+}
+
+footer p {
+    font-size: 1.5rem;
+    margin-top: 2.5%;
+    margin-left: 70%;
+}
 /* mobile media query */
 @media (max-width: 428px) {
     /* header section */
