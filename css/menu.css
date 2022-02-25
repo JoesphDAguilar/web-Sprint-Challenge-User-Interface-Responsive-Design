@@ -1,59 +1,17 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-
+/*CSS Reset*/
 * {
     box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    max-width: 100%;
+
+    
 }
 
 html {
     max-width: 1920px;
     min-width: 428px;
+    width: 100%;
     font-size: 62.5%;
 }
 
@@ -86,6 +44,12 @@ p, a {
     font-size: 3rem;
 }
 
+.container {
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+}
+
 /* header section */
 header {
     width: 100%;
@@ -95,6 +59,43 @@ header {
     background-position: center;
     background-repeat: no-repeat;
 }
+
+header a{
+    color: rgb(225, 239, 230);
+}
+
+.header-container {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(0, 4, 17, .8);
+    height: 28vh;
+}
+
+.header-container h1 {
+    margin-top: 1%;
+    margin-right: 1%;
+    padding-bottom: 2%;
+}
+
+.header-container h1 a {
+    font-size: 7rem;
+}
+
+.header-container nav {
+   margin-left: 12%;
+}
+
+.header-container nav a{
+    padding-right: 15%;
+}
+
+.header-container nav i {
+    font-size: 4rem;
+    color: rgb(225, 239, 230);
+    margin-top: 1%;
+    padding-right: 8%;
+}
+
 
 /* spacer */
 .spacer {
@@ -118,14 +119,74 @@ header {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    color: rgb(225, 239, 230);
+    margin-top: 1%;
+}
+
+.menu-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-item{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20%;
+    padding: 4%;
+}
+
+.menu-item h4 {
+    display: flex;
+    flex-direction: row;
+    padding-right: 40%;
 }
 
 /* footer section */
 footer {
     width: 100%;
-    height: 15vh;
+    height: 14vh;
     padding-top: 2.5vh;
     font-size: 3rem;
+    background-color: rgb(0, 4, 17);
+    color: rgb(225, 239, 230); 
+}
+
+footer label {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 5%;
+}
+
+footer input {
+    display: flex;
+    height: 4vh;
+    width: 20%;
+    margin-left: 1%;
+}
+
+.btn {
+    font-size: 3rem;
+    width: 6%;
+    height: 4.1vh;
+    display: flex;
+   margin-left: 21%;
+   margin-top: -2.3%;
+}
+
+footer nav a {
+    color: rgb(225, 239, 230);
+    padding-right: 10%;
+}
+
+footer nav {
+    margin-top: -5%;
+    margin-left: 30%;
+}
+
+footer p {
+    font-size: 1.5rem;
+    margin-top: 2.5%;
+    margin-left: 70%;
 }
 
 /* mobile media query */
